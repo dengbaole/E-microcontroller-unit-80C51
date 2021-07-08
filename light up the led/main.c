@@ -1,6 +1,6 @@
 # include "reg51.h"
 
-sbit led1 = P2^0;   //????
+sbit led1 = P2^0;   //∂®“ÂÃΩ’Îµ„
 sbit led2 = P2^1;
 sbit led3 = P2^2;
 

@@ -1,4 +1,4 @@
-C51 COMPILER V9.54   MAIN                                                                  07/08/2021 20:17:21 PAGE 1   
+C51 COMPILER V9.54   MAIN                                                                  07/08/2021 20:36:11 PAGE 1   
 
 
 C51 COMPILER V9.54, COMPILATION OF MODULE MAIN
@@ -10,7 +10,7 @@ line level    source
 
    1          # include "reg51.h"
    2          
-   3          sbit led1 = P2^0;   //????
+   3          sbit led1 = P2^0;   //∂®“ÂÃΩ’Îµ„
    4          sbit led2 = P2^1;
    5          sbit led3 = P2^2;
    6          
