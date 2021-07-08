@@ -1,0 +1,50 @@
+C51 COMPILER V9.54   MAIN                                                                  07/08/2021 22:37:05 PAGE 1   
+
+
+C51 COMPILER V9.54, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: C:\app\c51\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\main
+                    -.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          # include "reg51.h"
+   2          #include "intrins.h"
+   3          typedef unsigned char u8;
+   4          typedef unsigned int u16;
+   5          
+   6          sbit LSA2 = P2^2;
+   7          sbit LSA3 = P2^3;
+   8          sbit LSA4 = P2^4;
+   9          
+  10          u8 code smgduan[]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,
+  11                             0x07,0x7f,0x6f,0x77,0x7c,0x39,0x5e,0x79,0x71};
+  12          //分别表示0123456789abcdef
+  13          //code是用来减少数据大小
+  14          
+  15          
+  16          int main()
+  17          {
+  18   1        LSA2 = 0;
+  19   1        LSA3 = 0;
+  20   1        LSA4 = 0;
+  21   1        P0 = smgduan[0];
+  22   1        
+  23   1        
+  24   1        return 0;
+  25   1        
+  26   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     17    ----
+   CONSTANT SIZE    =     16    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
